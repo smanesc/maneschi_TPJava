@@ -61,17 +61,17 @@ public class Partie {
      * Lancer la partie
      * Chaque joueur joue à tour de rôle pendant les nb_tours
      * Le gagnant est affiché à la fin de la partie
+     * Affichage des numéros de tour et scores des joueurs (plus "visuel" pour l'utilisateur)
      */
     public void lancer() {
 
         int i = 1;
         while (i <= this.nb_tours) {
-            System.out.println("Tour " + i);
+            System.out.println("\n<<<<<<<<<<<<<<<<< Tour " + i + " >>>>>>>>>>>>>>>>>>");
             for (Joueur joueur : this.joueurs) {
                 System.out.println("========== Joueur " + joueur.get_nom() + " ==========");
-
                 joueur.jouer(this.gobelet);
-
+                System.out.println("Score : " + joueur.get_score());
             }
             i++;
         }

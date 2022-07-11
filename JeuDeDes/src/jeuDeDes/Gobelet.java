@@ -26,8 +26,16 @@ public class Gobelet {
     }
 
     /**
+     * Méthode permettant d'afficher le score du dernier lancé de gobelet
+     */
+    public void afficher_score() {
+        System.out.println("Le score du dernier lancé est : " + this.valeurGobelet);
+    }
+
+    /**
      * Méthode permettant de lancer les dés du gobelet
-     * et met à jour la valeur du gobelet
+     * et met à jour la valeur du gobelet.
+     * Et affichage du score
      */
     public void lancer() {
         int valGobelet = 0;
@@ -37,12 +45,7 @@ public class Gobelet {
             valGobelet += de.get_valeur();
         }
         this.valeurGobelet = valGobelet;
-    }
 
-    /**
-     * Méthode permettant d'afficher le score du dernier lancé de gobelet
-     */
-    public void afficher_score() {
-        System.out.println("Le score du dernier lancé est : " + this.valeurGobelet);
+        afficher_score();
     }
 }
