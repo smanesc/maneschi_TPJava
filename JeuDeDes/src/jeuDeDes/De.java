@@ -29,5 +29,4 @@ public class De {
         Random intRandom = new Random();
         this.valeur = intRandom.nextInt(1, 6);
     }
-
 }
