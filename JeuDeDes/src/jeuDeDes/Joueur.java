@@ -1,6 +1,6 @@
 package jeuDeDes;
 
-public class Joueur {
+public class Joueur implements InterfaceAfficherScore {
     private String nom;
     private int score;
 
@@ -49,5 +49,6 @@ public class Joueur {
     public void afficher_score() {
         System.out.println("Le score du joueur " + this.nom + " est de : " + this.score);
     }
+
 
 }

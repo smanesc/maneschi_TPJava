@@ -1,6 +1,6 @@
 package jeuDeDes;
 
-public class Gobelet {
+public class Gobelet implements InterfaceLancer, InterfaceAfficherScore {
     private int valeurGobelet;
     private De des[];
 
