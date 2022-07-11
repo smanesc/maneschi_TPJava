@@ -2,7 +2,7 @@ package jeuDeDes;
 
 import java.util.Random;
 
-public class De {
+public class De implements InterfaceLancer {
     private int valeur;
 
     /**
@@ -29,4 +29,5 @@ public class De {
         Random intRandom = new Random();
         this.valeur = intRandom.nextInt(1, 6);
     }
+
 }

@@ -2,7 +2,7 @@ package jeuDeDes;
 
 import java.util.Scanner;
 
-public class Partie {
+public class Partie implements InterfaceLancer {
     private int nb_tours;
     private Gobelet gobelet;
     private Joueur joueurs[];
@@ -54,7 +54,7 @@ public class Partie {
                 gagnant = joueur.get_nom();
             }
         }
-        System.out.println("Le gagnant de la partie est " + gagnant + ", avec un score de : " + maxScore);
+        System.out.println("\n ### Le gagnant de la partie est " + gagnant + ", avec un score de : " + maxScore + " ###");
     }
 
     /**
